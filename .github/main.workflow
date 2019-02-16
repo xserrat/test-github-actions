@@ -7,8 +7,7 @@ workflow "on pull request label it" {
   ## Since we can set what actions "need" in our definition of an action,
   ## we only care about the last actions run here.
   resolves = [
-    "Label Pull Request",
-    "Filter by fast-track branch",
+    "Label Pull Request"
   ]
 }
 
