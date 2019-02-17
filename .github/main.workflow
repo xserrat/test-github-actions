@@ -22,7 +22,7 @@ action "Label Pull Request" {
   ## We need a github token so that when we call the github api from our
   ## scripts in the above repository we can authenticate and have permission
   ## to delete a branch.
-  secrets = ["GITHUB_TOKEN"]
+  secrets = ["GITHUB_TOKEN", "JIRA_ENCODED_TOKEN", "URI_JIRA"]
 }
 
 action "Filter by fast-track branch" {
