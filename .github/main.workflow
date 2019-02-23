@@ -23,6 +23,10 @@ action "Label Pull Request" {
   ## scripts in the above repository we can authenticate and have permission
   ## to delete a branch.
   secrets = ["GITHUB_TOKEN", "JIRA_ENCODED_TOKEN", "URI_JIRA"]
+  env = {
+    REVIEWERS = "xserrat,mcornella"
+    REGEXP_FOR_JIRA_CODE_ON_PR_TITLE = "^([A-Z]{4}-[0-9]{4})"
+  }
 }
 
 action "Filter by fast-track branch" {
