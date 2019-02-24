@@ -24,7 +24,7 @@ action "Label Pull Request" {
   ## to delete a branch.
   secrets = ["GITHUB_TOKEN", "JIRA_ENCODED_TOKEN", "URI_JIRA"]
   env = {
-    REVIEWERS = "xserrat,mcornella"
+    REVIEWERS = "xserrat,test11122334"
     REGEXP_FOR_JIRA_CODE_ON_PR_TITLE = "^([A-Z]{4}-[0-9]{4}).*"
   }
 }
