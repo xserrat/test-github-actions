@@ -17,7 +17,7 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    - uses: xserrat/github-actions/action/jira-issue-label@issue_1
+    - uses: xserrat/github-actions@issue_1
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         JIRA_URI: ${{ secrets.URI_JIRA }}
