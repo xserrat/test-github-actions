@@ -11,11 +11,10 @@ jobs:
     name: Label Pull Request with Jira properties
     steps:
       - name: Label with Jira issue properties
-        uses: xserrat/pr-jira-properties-labeler#3e73d88
+        uses: xserrat/pr-jira-properties-labeler@3e73d88
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           JIRA_ENCODED_TOKEN: ${{ secrets.JIRA_ENCODED_TOKEN }}
           JIRA_URI: ${{ secrets.JIRA_URI }}
           regexp_jira_issue_code_on_pr_title: '^([A-Z]{4}).*'
-          issue_properties:
-            - { property: 'priority', display_name: 'Prio' }
+          issue_properties: '[priority]'
